@@ -6,16 +6,11 @@ student = []
 student.append(input('Please enter name: '))
 
 student.append(float(input('Please enter age:')))
-
-studentage = student[1]
-
-while not studentage.is_integer():
-  studentage = float(input("Please enter age:   "))
   
-while studentage <1 or studentage >150:
+while student[1] <1 or student[1] >150 or not student[1].is_integer():
   student[1] = float(input('Please enter age: '))
 
-student[1] = int(studentage)
+student[1] = int(student[1])
 
 
 student.append(float(input('Please enter height: ')))
